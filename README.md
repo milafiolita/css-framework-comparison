@@ -1,90 +1,41 @@
-## 1. Penjelasan Singkat Mengenai Shell dan Zsh
-```
-Shell adalah program (penterjemah perintah) yang menjembatani user dengan sistem operasi dalam hal ini kernel (inti sistem operasi), umumnya shell menyediakan prompt sebagai user interface, tempat dimana user mengetikkan perintah-perintah yang diinginkan baik berupa perintah internal shell (internal command), ataupun perintah eksekusi suatu file progam (eksternal command), selain itu shell memungkinkan user menyusun sekumpulan perintah pada sebuah atau beberapa file untuk dieksekusi sebagai program.
-```
-```
-Zsh adalah sebuah powerful shell yang interaktif dan kompatibel dengan semua command (perintah) di bash. Kelebihan Zsh dibanding bash adalah efesinsi; tab completion yang lebih baik dibanding bash; dukungan syntax-highlighting; fitur globbing; array handling; dan bisa dikostumisasi secara menyeluruh (Fully customisable).
-```
+# Bootstrap 4, Foundation 6, dan Tailwind CSS
 
-## 2. Cara Instalasi Zsh
-Buka terminal, lalu ketikkan :
-```
-$ sudo apt-get install zsh
-```
-
-## 3. Penjelasan Singkat Mengenai Oh My Zsh
-```
-Oh My Zsh adalah framework open source, community-driven untuk mengelola konfigurasi zsh Anda.
-```
-
-## 4. Cara Install Oh My ZSH
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-## 5. Cara Menggati Tema Zsh (Menggunakan Oh My Zsh)
-* Buka file .zshrc
-```
-nano .zshrc
-```
-* Jika file sudah terbuka cari script berikut :
-```
-# time that oh-my-zsh is loaded.
-ZSH_THEME="<nama tema>"
-```
-*  Isi nama tema yang diinginkan. Daftar tema dapat dilihat [disini](https://github.com/robbyrussell/oh-my-zsh/wiki/themes)
-* Simpan file .zshrc
-* Jalankan dengan :
-```
-source .zshrc
-```
-
-## 6. Fitur - Fitur Zsh yang tidak tersedia di Bash
-### Auto-correct
-pada zsh terdapat auto-correct
-
-### Auto-complete
-pada zsh terdapat auto-complete dengan cara tekan tombol **tab**
-
-### Expand Variable
-ketik
-``` 
-$ Path
-```
-maka akan menghasilkan 
-```
-/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-```
-### Extended gobbling
- ```
- ls *(
-%  -- device files
-)  -- end of qualifiers
-*  -- executable plain files
-+  -- + command name
--  -- follow symlinks toggle
-.  -- plain files
-/  -- directories
-:  -- modifier
-=  -- sockets
-@  -- symbolic links
-A  -- group-readable
-D  -- glob dots
-E  -- group-executable
-F  -- non-empty directories
- ```
-
-### Autopush Command
- ```
- cd
- ```
- bisa langsung kembali ke direktori sebelumnya
-
-### Tema
- zsh menyediakan berbagai tema yang bisa diubah oleh pengguna
-
-### Alias 
- menyediakan perintah yang lebih singkat. Contoh :
- ```
-ls -liah menjadi ls -ll
- ```
+|Comparison	|Bootstrap 4.0.0-alpha	|Foundation 6 NEW|Tailwind |
+|-----------|-----------------------|----------------|---------|
+|Summary	|Pembaruan dalam versi 4.0.0-alpha:|Fountation 6 Updates:|
+|			|* Menjatuhkan kurang mendukung Sass|50% pengurangan kode|
+|			|* Sistem grid lebih baik untuk mobile |Komponen yang dibangun dengan lebih banyak perhatian untuk akses Web |
+|			|* Opt-in flexbox dukungan - menggunakan Sass boolean untuk beralih|Gaya default lebih sedikit untuk menimpa|
+|			|* Wells, thumbnail, dan panel telah digantikan oleh Cards|Disesuaikan Sass Grid |
+|			|* Reset baru yang disebut Reboot (kombinasi dari normalize.css dan gaya dasar Bootstrap)|Flexbox grid toggling|
+|			|* Support IE8 | Kustom breakpoint |
+|			|* Berpindah dari px ke rem dan em unit | Alat-alat prototipe ZURB|
+|			|* Semua plugin JS ditulis ulang di ES6 |Gerak UI|
+|			|* Sepenuhnya ditulis ulang dan peningkatan dokumentasi |Pola navigasi yang lebih fleksibel|
+|Versi		|4.0.0-alpha	|6		|
+|Terakhir dirilis	| 19 Agustus 2015	|19 November 2015	| Oktober 2017|
+|Ukuran File	|22.1 kB	|16.7 kB	|36.4 kB
+|Situs Web	|v4-alpha.getbootstrap.com|	foundation.zurb.com/sites	|https://tailwindcss.com
+|GitHub		|github.com/twbs/bootstrap	|https://github.com/tailwindcssgithub.com/zurb/foundation-sites	|
+|Pencipta	|Mark Otto dan Yakub Thornton di Twitter	|ZURB|Adam Wathan, Jonathan Reinink, David Hemphill, and Steve Schoger.|
+|Lisensi	|Lisensi MIT	|Lisensi MIT	|Lisensi MIT|
+|Dukungan browser	|Mobile	|Terakhir dua versi:	|* Chrome|
+|	|* Chrome - Android dan iOS	|* Chrome	|* Safari|
+|	|* Firefox - Android		|* Firefox	|* Internet Explorer|
+|	|* Safari - iOS		|* Safari	|* Firefox|
+|	|Android Browser & WebView - Android	|* Opera	|* Edge
+|	|Desktop	|* Mobile Safari	|
+|	|* Chrome - Mac-Win	|* IE Mobile	|
+|	|* Firefox - Mac-Win	|* IE 9 +	|
+|	|* IE9 + - Win (IE9 keterbatasan)	|* Browser Android 2.3 +	|
+|	|* Opera - Mac-Win
+|	|* Safari - Mac
+|	|"Secara tidak resmi, Bootstrap harus melihat dan berperilaku cukup baik dalam Kromium dan Chrome untuk Linux, Firefox untuk Linux, dan Internet Explorer 8 dan di bawah ini, meskipun mereka tidak secara resmi didukung." -Bootstrap 4 Docs		|
+|CSS	
+|* Reset	|reboot.css (_reboot.scss)	|normalize.css	|normalize.css
+|* LESS	|N	|N	|N	|
+|Sass/Scss	|Y	|Y	|Y
+|Grid dan responsif	|	|	|	|
+|* Lebar dasar	|Fluid (0, 34em, 48em, 62em, 75em)	|Fluid (75rem lebar standar)	|
+|Kolom	|12	|1-infinity (12 default)	|
+|
