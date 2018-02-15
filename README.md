@@ -1,17 +1,8 @@
-# Bootstrap 4, Foundation 6, dan Tailwind CSS
+# CSS FRAMEWORK COMPARISON
+Bootstrap 4, Foundation 6, dan Tailwind CSS
 
 |Comparison	|Bootstrap 4.0.0-alpha	|Foundation 6 NEW|Tailwind |
 |-----------|-----------------------|----------------|---------|
-|Summary	|Pembaruan dalam versi 4.0.0-alpha:|Fountation 6 Updates:|
-|			|* Dropped Less in favor of Sass|50% pengurangan kode|
-|			|* Sistem grid lebih baik untuk mobile |Komponen yang dibangun dengan lebih banyak perhatian untuk akses Web |
-|			|* Opt-in flexbox dukungan - menggunakan Sass boolean untuk beralih|Gaya default lebih sedikit untuk menimpa|
-|			|* Wells, thumbnail, dan panel telah digantikan oleh Cards|Disesuaikan Sass Grid |
-|			|* Reset baru yang disebut Reboot (kombinasi dari normalize.css dan gaya dasar Bootstrap)|Flexbox grid toggling|
-|			|* Support IE8 | Kustom breakpoint |
-|			|* Berpindah dari px ke rem dan em unit | Alat-alat prototipe ZURB|
-|			|* Semua plugin JS ditulis ulang di ES6 |Gerak UI|
-|			|* Sepenuhnya ditulis ulang dan peningkatan dokumentasi |Pola navigasi yang lebih fleksibel|
 |Versi		|4.0.0-alpha	|6		|V.0.4
 |Terakhir dirilis	| 19 Agustus 2015	|19 November 2015	| Oktober 2017|
 |Ukuran File	|22.1 kB	|16.7 kB	|36.4 kB
@@ -38,4 +29,13 @@
 |Grid dan responsif	|	|	|	|
 |* Lebar dasar	|Fluid (0, 34em, 48em, 62em, 75em)	|Fluid (75rem lebar standar)	|
 |Kolom	|12	|1-infinity (12 default)	|
-|
+|Summary	|Pembaruan dalam versi 4.0.0-alpha:|Fountation 6 Updates:|
+|			|* Dropped Less in favor of Sass|50% pengurangan kode|
+|			|* Sistem grid lebih baik untuk mobile |Komponen yang dibangun dengan lebih banyak perhatian untuk akses Web |
+|			|* Opt-in flexbox dukungan - menggunakan Sass boolean untuk beralih|Gaya default lebih sedikit untuk menimpa|
+|			|* Wells, thumbnail, dan panel telah digantikan oleh Cards|Disesuaikan Sass Grid |
+|			|* Reset baru yang disebut Reboot (kombinasi dari normalize.css dan gaya dasar Bootstrap)|Flexbox grid toggling|
+|			|* Support IE8 | Kustom breakpoint |
+|			|* Berpindah dari px ke rem dan em unit | Alat-alat prototipe ZURB|
+|			|* Semua plugin JS ditulis ulang di ES6 |Gerak UI|
+|			|* Sepenuhnya ditulis ulang dan peningkatan dokumentasi |Pola navigasi yang lebih fleksibel|
